@@ -27,6 +27,12 @@ body {
   color: #38bdf8 !important;
 }
 
+/* ===== IMAGEN DEV =====*/
+.imagen-programador{
+  object-fit: cover;
+  max-width: 500px;
+  max-height: 500px;
+}
 /* ===== HERO ===== */
 section.bg-dark {
   background: linear-gradient(135deg, #020617, #0f172a) !important;
@@ -104,7 +110,6 @@ section {
 
 /* ===== FOOTER ===== */
 footer {
-  background-color: #020617;
   color: #64748b;
   font-size: 0.9rem;
 }

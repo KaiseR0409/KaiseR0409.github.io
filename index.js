@@ -111,16 +111,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const formData = new FormData(contactForm);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const message = formData.get('message');
-
-            console.log('Form submitted:', { name, email, message });
-
-            alert('¡Mensaje enviado! (Configura el action del formulario para funcionar)');
-            contactForm.reset();
+            const action = contactForm.getAttribute('action');
+            if (!action || action === '#') {
+                e.preventDefault();
+                alert('Configura el action del formulario con tu URL de Formspree.');
+                return;
+            }
         });
     }
 

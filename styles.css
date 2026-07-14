@@ -29,6 +29,10 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -648,7 +652,6 @@ body {
 .contact-item:hover {
     border-color: var(--primary);
     color: var(--text-primary);
-    transform: translateX(10px);
 }
 
 .contact-item i {

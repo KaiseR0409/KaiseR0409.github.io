@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const action = contactForm.getAttribute('action');
             if (!action || action === '#') {
                 e.preventDefault();
-                alert('Configura el action del formulario con tu URL de Formspree.');
+                alert('Configure the form action with your Formspree URL.');
                 return;
             }
         });

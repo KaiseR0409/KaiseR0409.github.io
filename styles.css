@@ -286,7 +286,7 @@ main {
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid var(--primary);
+    
 }
 
 .about-highlight {

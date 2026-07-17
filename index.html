@@ -1,324 +1,371 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fernando Valderrama | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-
+    <link rel="icon" href="/img/favico.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">FV</a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#hero" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">FV</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <div id="vanta-hero" class="hero-section">
-        <div class="hero-content">
-            <div class="hero-badge">Full Stack Developer</div>
-            <h1 class="hero-title">
-                <span class="hero-name">Fernando</span>
-                <span class="hero-lastname">Valderrama</span>
-            </h1>
-            <p class="hero-subtitle">Software Engineer | Backend & Frontend | AI Automation</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-outline">Contact</a>
-            </div>
+      <div class="hero-content">
+        <div class="hero-badge">Full Stack Developer</div>
+        <h1 class="hero-title">
+          <span class="hero-name">Fernando</span>
+          <span class="hero-lastname">Valderrama</span>
+        </h1>
+        <p class="hero-subtitle">
+          Software Engineer | Backend & Frontend | AI Automation
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact</a>
         </div>
-        <div class="hero-scroll">
-            <a href="#about"><i class="fas fa-chevron-down"></i></a>
-        </div>
+      </div>
+      <div class="hero-scroll">
+        <a href="#about"><i class="fas fa-chevron-down"></i></a>
+      </div>
     </div>
 
     <main>
-        <section id="about" class="section about-section">
-            <div class="container">
-                <h2 class="section-title" data-animate>About Me</h2>
-                <div class="about-content" data-animate>
-                    <div class="about-image">
-                        <img src="img/perfilcv.png" alt="Fernando Valderrama">
-                    </div>
-                    <p class="about-highlight">
-                        Full Stack Developer with experience building web applications,
-                        APIs, dashboards, databases, and AI-powered automation solutions.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">4+</span>
-                            <span class="stat-label">Years of Study</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Projects</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Technologies</span>
-                        </div>
-                    </div>
-                </div>
+      <section id="about" class="section about-section">
+        <div class="container">
+          <h2 class="section-title" data-animate>About Me</h2>
+          <div class="about-content" data-animate>
+            <div class="about-image">
+              <img src="img/perfilcv.png" alt="Fernando Valderrama" />
             </div>
-        </section>
-
-        <section id="projects" class="section projects-section">
-            <div class="container">
-                <h2 class="section-title" data-animate>Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card" data-animate>
-                        <div class="project-image">
-                            <div class="project-placeholder">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Virtual Pharmacy</h3>
-                            <p>Full stack web app for pharmacy management built with Svelte and ASP.NET.</p>
-                            <div class="project-tags">
-                                <span>Svelte</span>
-                                <span>ASP.NET</span>
-                                <span>SQL Server</span>
-                            </div>
-                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-card" data-animate>
-                        <div class="project-image">
-                            <div class="project-placeholder">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Biobío TV Dashboard</h3>
-                            <p>Metrics and analytics platform for KPI tracking and decision making.</p>
-                            <div class="project-tags">
-                                <span>Vue 3</span>
-                                <span>Python</span>
-                                <span>MongoDB</span>
-                            </div>
-                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-card" data-animate>
-                        <div class="project-image">
-                            <div class="project-placeholder">
-                                <i class="fas fa-ship"></i>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Port Operations Portal</h3>
-                            <p>Full stack solution to see data in real-time.</p>
-                            <div class="project-tags">
-                                <span>ASP.NET Core</span>
-                                <span>Vue 3</span>
-                                <span>AI</span>
-                            </div>
-                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <p class="about-highlight">
+              Full Stack Developer with experience building web applications,
+              APIs, dashboards, databases, and AI-powered automation solutions.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Years of Study</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
             </div>
-        </section>
-        
-        <section id="experience" class="section experience-section">
-            <div class="container">
-                <h2 class="section-title" data-animate>Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item" data-animate>
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>Full Stack & AI Automation Developer</h3>
-                                <span class="timeline-date">Jun 2026 - Present</span>
-                            </div>
-                            <h4 class="timeline-company">Servicios Portuarios Reloncaví</h4>
-                            <ul class="timeline-list">
-                                <li>Building full stack solutions with ASP.NET Core, Vue 3, and SQL Server.</li>
-                                <li>Designing AI-assisted workflows for document generation and task automation.</li>
-                                <li>Creating dashboards and KPI visualizations with real-time data.</li>
-                            </ul>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </section>
 
-                    <div class="timeline-item" data-animate>
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>Full Stack Developer - Thesis Project</h3>
-                                <span class="timeline-date">2025 | 7 months</span>
-                            </div>
-                            <h4 class="timeline-company">Virtual Pharmacy System</h4>
-                            <ul class="timeline-list">
-                                <li>Developed a full stack web app with Svelte and ASP.NET.</li>
-                                <li>Implemented REST APIs and SQL Server integration with Entity Framework.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item" data-animate>
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>Full Stack Developer - Internship</h3>
-                                <span class="timeline-date">2025 | 3 months</span>
-                            </div>
-                            <h4 class="timeline-company">Biobío Comunicaciones</h4>
-                            <ul class="timeline-list">
-                                <li>Built metrics dashboards with Vue 3 and Python APIs.</li>
-                                <li>Worked with WordPress, MongoDB, MariaDB, and Docker.</li>
-                            </ul>
-                        </div>
-                    </div>
+      <section id="projects" class="section projects-section">
+        <div class="container">
+          <h2 class="section-title" data-animate>Projects</h2>
+          <div class="projects-grid">
+            <!-- BIO BIO TV-->
+            <div class="project-card" data-animate>
+              <div class="project-image">
+                <img src="img/bbio-v03.jpg"  alt="Project preview">
+              </div>
+              <div class="project-info">
+                <h3>Biobío TV new design</h3>
+                <p>
+                  Part of the development team that revamped the major website
+                  BiobioTV.
+                </p>
+                <div class="project-tags">
+                  <span>PHP</span>
+                  <span>Bootstrap</span>
+                  <span>JS libraries, HTML, CSS</span>
+                  <span> Vue3 </span>
+                  <span> Smarty </span>
                 </div>
+                <a
+                  href="https://www.biobiochile.cl/biobiotv/"
+                  class="project-link"
+                  >View solution <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
             </div>
-        </section>
 
-        <section id="skills" class="section skills-section">
-            <div class="container">
-                <h2 class="section-title" data-animate>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category" data-animate>
-                        <div class="skill-icon"><i class="fas fa-server"></i></div>
-                        <h3>Backend</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">ASP.NET Core</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">PHP</span>
-                            <span class="skill-tag">REST APIs</span>
-                            <span class="skill-tag">Entity Framework</span>
-                        </div>
-                    </div>
+            <!-- Data-ia dashboard-->
 
-                    <div class="skill-category" data-animate>
-                        <div class="skill-icon"><i class="fas fa-code"></i></div>
-                        <h3>Frontend</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Vue 3</span>
-                            <span class="skill-tag">Svelte</span>
-                            <span class="skill-tag">Vite</span>
-                            <span class="skill-tag">Tailwind CSS</span>
-                            <span class="skill-tag">JavaScript</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category" data-animate>
-                        <div class="skill-icon"><i class="fas fa-database"></i></div>
-                        <h3>Databases</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">SQL Server</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">MariaDB</span>
-                            <span class="skill-tag">MongoDB</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category" data-animate>
-                        <div class="skill-icon"><i class="fas fa-robot"></i></div>
-                        <h3>AI & Automation</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">AI Agents</span>
-                            <span class="skill-tag">Power Automate</span>
-                            <span class="skill-tag">Data Analysis</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category" data-animate>
-                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
-                        <h3>Tools</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">Linux</span>
-                            <span class="skill-tag">WordPress</span>
-                        </div>
-                    </div>
+            <div class="project-card" data-animate>
+              <div class="project-image">
+                <img src="img/metricas-project.png"  alt="Project preview">
+              </div>
+              <div class="project-info">
+                <h3>AI visual dashboard on Biobio website</h3>
+                <p>
+                  Part of the development team of this site.
+                </p>
+                <div class="project-tags">
+                  <span>Python</span>
+                  <span>MongoDB</span>
+                  <span>JS libraries, Vue3 libraries</span>
                 </div>
+                <a
+                  href="https://metricas-ia.biobiochile.cl/"
+                  class="project-link"
+                  >View solution <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
             </div>
-        </section>
 
-        
+          </div>
+        </div>
+      </section>
 
-        <section id="contact" class="section contact-section">
-            <div class="container">
-                <h2 class="section-title" data-animate>Contact</h2>
-                <div class="contact-grid">
-                    <div class="contact-info" data-animate>
-                        <h3>Let's work together</h3>
-                        <p>Available for new opportunities and collaborations.</p>
-                        <div class="contact-links">
-                            <a href="mailto:fernandovalderramaignacio@gmail.com" class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>fernandovalderramaignacio@gmail.com</span>
-                            </a>
-                            <a href="tel:+56983016261" class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <span>+56 9 8301 6261</span>
-                            </a>
-                            <a href="https://linkedin.com/in/fernando-valderrama" class="contact-item" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                                <span>LinkedIn</span>
-                            </a>
-                            <a href="https://github.com/KaiseR0409" class="contact-item" target="_blank">
-                                <i class="fab fa-github"></i>
-                                <span>GitHub</span>
-                            </a>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Concepción, Chile</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form-wrapper" data-animate>
-                        <form class="contact-form" action="https://formspree.io/f/mdaqklrz" method="POST">
-                            <div class="form-group">
-                                <input type="text" name="name" placeholder="Your name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Your email" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-full">
-                                Send Message <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </form>
-                    </div>
+      <section id="experience" class="section experience-section">
+        <div class="container">
+          <h2 class="section-title" data-animate>Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item" data-animate>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Full Stack & AI Automation Developer</h3>
+                  <span class="timeline-date">Jun 2026 - Present</span>
                 </div>
+                <h4 class="timeline-company">Servicios Portuarios Reloncaví</h4>
+                <ul class="timeline-list">
+                  <li>
+                    Building full stack solutions with ASP.NET Core, Vue 3, and
+                    SQL Server.
+                  </li>
+                  <li>
+                    Designing AI-assisted workflows for document generation and
+                    task automation.
+                  </li>
+                  <li>
+                    Creating dashboards and KPI visualizations with real-time
+                    data.
+                  </li>
+                </ul>
+              </div>
             </div>
-        </section>
+
+            <div class="timeline-item" data-animate>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Full Stack Developer - Thesis Project</h3>
+                  <span class="timeline-date">2025 | 7 months</span>
+                </div>
+                <h4 class="timeline-company">Virtual Pharmacy System</h4>
+                <ul class="timeline-list">
+                  <li>
+                    Developed a full stack web app with Svelte and ASP.NET.
+                  </li>
+                  <li>
+                    Implemented REST APIs and SQL Server integration with Entity
+                    Framework.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-animate>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Full Stack Developer - Internship</h3>
+                  <span class="timeline-date">2025 | 3 months</span>
+                </div>
+                <h4 class="timeline-company">Biobío Comunicaciones</h4>
+                <ul class="timeline-list">
+                  <li>Built metrics dashboards with Vue 3 and Python APIs.</li>
+                  <li>Worked with WordPress, MongoDB, MariaDB, and Docker.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <div class="container">
+          <h2 class="section-title" data-animate>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-category" data-animate>
+              <div class="skill-icon"><i class="fas fa-server"></i></div>
+              <h3>Backend</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">ASP.NET Core</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">Entity Framework</span>
+              </div>
+            </div>
+
+            <div class="skill-category" data-animate>
+              <div class="skill-icon"><i class="fas fa-code"></i></div>
+              <h3>Frontend</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Vue 3</span>
+                <span class="skill-tag">Svelte</span>
+                <span class="skill-tag">Vite</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="skill-category" data-animate>
+              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <h3>Databases</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">SQL Server</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">MariaDB</span>
+                <span class="skill-tag">MongoDB</span>
+              </div>
+            </div>
+
+            <div class="skill-category" data-animate>
+              <div class="skill-icon"><i class="fas fa-robot"></i></div>
+              <h3>AI & Automation</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">AI Agents</span>
+                <span class="skill-tag">Power Automate</span>
+                <span class="skill-tag">Data Analysis</span>
+              </div>
+            </div>
+
+            <div class="skill-category" data-animate>
+              <div class="skill-icon"><i class="fas fa-tools"></i></div>
+              <h3>Tools</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">WordPress</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <h2 class="section-title" data-animate>Contact</h2>
+          <div class="contact-grid">
+            <div class="contact-info" data-animate>
+              <h3>Let's work together</h3>
+              <p>Available for new opportunities and collaborations.</p>
+              <div class="contact-links">
+                <a
+                  href="mailto:fernandovalderramaignacio@gmail.com"
+                  class="contact-item"
+                >
+                  <i class="fas fa-envelope"></i>
+                  <span>fernandovalderramaignacio@gmail.com</span>
+                </a>
+                <a href="tel:+56983016261" class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <span>+56 9 8301 6261</span>
+                </a>
+                <a
+                  href="https://linkedin.com/in/fernando-valderrama"
+                  class="contact-item"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a
+                  href="https://github.com/KaiseR0409"
+                  class="contact-item"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Concepción, Chile</span>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form-wrapper" data-animate>
+              <form
+                class="contact-form"
+                action="https://formspree.io/f/mdaqklrz"
+                method="POST"
+              >
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="Your message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                  Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Fernando Valderrama. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2026 Fernando Valderrama. All rights reserved.</p>
+      </div>
     </footer>
 
     <a href="#hero" class="back-to-top" id="back-to-top">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

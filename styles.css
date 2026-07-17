@@ -581,11 +581,11 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1400px;
+    width: 1600px;
     height: 900px;
     border: none;
     pointer-events: none;
-    transform: scale(0.25);
+    transform: scale(0.28);
     transform-origin: top left;
 }
 

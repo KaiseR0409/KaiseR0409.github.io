@@ -499,6 +499,97 @@ main {
     transform: scale(1.05);
 }
 
+/* Certifications */
+.certifications-section {
+    background: var(--bg-dark);
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cert-card {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+}
+
+a.cert-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 15px 30px rgba(99, 102, 241, 0.1);
+}
+
+.cert-card.cert-main {
+    grid-column: 1 / -1;
+    padding: 2.5rem;
+    background: var(--gradient);
+    border: none;
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+}
+
+.cert-card.cert-main .cert-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.cert-main-tag {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+}
+
+.cert-logo {
+    height: 36px;
+    margin-bottom: 1rem;
+}
+
+.cert-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    color: var(--text-primary);
+}
+
+.cert-issuer {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.cert-card.cert-main h3 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.cert-card.cert-main .cert-issuer {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
 /* Projects */
 .projects-section {
     background: var(--bg-dark);
@@ -865,6 +956,14 @@ main {
         grid-template-columns: 1fr;
     }
 
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .timeline-item {
         padding-left: 2rem;
     }
@@ -889,6 +988,14 @@ main {
     }
 
     .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certifications-grid {
         grid-template-columns: 1fr;
     }
 }
